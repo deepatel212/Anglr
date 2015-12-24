@@ -163,6 +163,7 @@ sampleApp.config(function ($routeProvider) {
   
   });
   sampleApp.controller('ContactController', function ($scope, $http) {
+      alert();
     $scope.result = 'hidden'
     $scope.resultMessage;
     $scope.formData; //formData is an object holding the name, email, subject, and message
