@@ -163,7 +163,7 @@ sampleApp.config(function ($routeProvider) {
   
   });
   sampleApp.controller('ContactController', function ($scope, $http) {
-      alert();
+      alert("Controller Attached");
     $scope.result = 'hidden'
     $scope.resultMessage;
     $scope.formData; //formData is an object holding the name, email, subject, and message
@@ -184,7 +184,7 @@ sampleApp.config(function ($routeProvider) {
                     $scope.submitButtonDisabled = true;
                     $scope.resultMessage = data.message;
                     $scope.result='bg-success';
-                    alert();
+                    alert("Hi");
                 } else {
                     $scope.submitButtonDisabled = false;
                     $scope.resultMessage = data.message;
