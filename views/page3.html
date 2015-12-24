@@ -1,0 +1,34 @@
+﻿
+<div class="title">
+<h1>Things to Do</h1>
+</div>
+<div ng-controller="todoListCtrl as todoList">
+<div class="row">
+    <h3 class="label label label-info">{{todoList.remaining()}} of {{todoList.todos.length}} Remaining.</h3><a class="badge trim" href="" ng-click="todoList.archive()"><i class="fa fa-archive"></i>archive</a>
+    <hr />
+<div class="jumbotron">
+<div class="row">
+<div class="col-md-6 col-md-offset-3">
+    <ul class="list-group">
+     <li class="list-group-item" ng-repeat="todo in todoList.todos">
+          <input type="checkbox" ng-model="todo.done">
+          <span class="done-{{todo.done}}">{{todo.text}}</span>
+        </li>
+    </ul>
+    </div>
+    </div>
+</div>
+  <hr />
+  <div class="container">
+<div class="row well">
+<div class="col-md-6 col-md-offset-3" style="padding-left:25px">
+    <form ng-submit="todoList.addTodo()">
+        <div class="input-group"><input type="text" ng-model="todoList.todoText"  size="77"
+               placeholder="add new todo here">
+        <input class="btn-xs btn-info" type="submit" value="Add"></div>
+      </form>
+</div>
+</div>
+</div>
+</div>
+</div>

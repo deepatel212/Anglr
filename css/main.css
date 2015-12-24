@@ -1,0 +1,83 @@
+﻿body{font-family: Voltaire;}
+p{font-family: Yanone Kaffeesatz;font-size:18px;letter-spacing:1px}
+i{color:gray}
+.animate-enter, 
+.animate-leave
+{ 
+    -webkit-transition: 700ms cubic-bezier(0.785, 0.135, 0.150, 0.860) all;
+    -moz-transition: 700ms cubic-bezier(0.785, 0.135, 0.150, 0.860) all;
+    -ms-transition: 700ms cubic-bezier(0.785, 0.135, 0.150, 0.860) all;
+    -o-transition: 700ms cubic-bezier(0.785, 0.135, 0.150, 0.860) all;
+    transition: 700ms cubic-bezier(0.785, 0.135, 0.150, 0.860) all;
+} 
+ 
+.animate-enter {
+    left: -100%;
+}
+.animate-enter.animate-enter-active {
+    left: 0;
+}
+ 
+.animate-leave {
+    left: 0;
+}
+.animate-leave.animate-leave-active{
+    left: 100%;
+}
+
+.jumbotron{padding:10px;}
+.page1body{background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(45deg, #ffffff 0%, #f3f3f3 50%, #ededed 50%, #ffffff 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#ffffff), color-stop(50%,#f3f3f3), color-stop(50%,#ededed), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(45deg, #ffffff 0%,#f3f3f3 50%,#ededed 50%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(45deg, #ffffff 0%,#f3f3f3 50%,#ededed 50%,#ffffff 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(45deg, #ffffff 0%,#f3f3f3 50%,#ededed 50%,#ffffff 100%); /* IE10+ */
+background: linear-gradient(45deg, #ffffff 0%,#f3f3f3 50%,#ededed 50%,#ffffff 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */}
+
+.nav a{outline:0 !important;}
+
+.image1
+{
+    background-image:url(../img/image1.jpg);
+    background-size:cover;
+        background-position:center;
+    color:White;
+    }
+.image2
+{
+    background-image:url(../img/image2.jpg);
+    background-size:cover;
+    background-position:center;
+    color:White;
+    }
+.home
+{
+    background-image:url(../img/home.jpg);
+    background-size:cover;
+    background-position:center;
+    color:#FFD800;
+    text-shadow:0px 0px 10px rgba(0,0,0,.8)
+    }
+.title{text-align:center;}
+.product{list-style-type:none;text-align:center;}    
+.product p{text-align:justify}
+.logo{font-size:55px !important;margin-top:50px;background-color:Yellow;padding:35px;border-radius:50%}
+.members{list-style-type:none;text-align:center;}
+.members img{display:block;margin:50px auto 0px auto;border:4px solid yellow}
+.members p{text-align:justify;}
+
+.wonders{list-style-type:none;margin-top:25px;}
+.wonders img{width:100%;border:5px solid yellow}
+.wonders p{text-align:justify}
+
+
+
+footer{position:absolute;width:100%;text-align:center;font-size:18px;background-color:yellow;color:gray;margin-top:150px;}
+.auth{float:right;font-size:3px}
+ .done-true { text-decoration: line-through;
+  color: grey;
+  background-color:#D6FFD6
+}.trim{float:right}
+.trim i{color:White;padding:0px 10px;}
+.well{margin-bottom:100px}

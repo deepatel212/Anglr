@@ -1,0 +1,16 @@
+﻿<div class="jumbotron text-center home">
+
+    <h1>This is HomePage</h1>
+    <h2>{{ message }}</h2>
+
+</div>
+<h1 class="title">Our Services</h1>
+<hr />
+<div class="row">
+    <div class="col-md-12">
+        <ul>
+            <li ng-repeat="product in prod.products" class="product col-md-3"><i class="logo {{product.sign}}"></i><h1>{{product.title}}</h1><hr /><p>{{product.description}}</p></li>
+        </ul>
+    </div>
+
+</div>

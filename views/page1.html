@@ -1,0 +1,21 @@
+﻿<div class="jumbotron text-left image1">
+
+    <h1>This is Page 1</h1>
+    <h2>{{ message }}</h2>
+
+</div>
+<div class="row">
+<h1 class="title">{{title}}</h1>
+<hr />
+    <div class="col-md-12">
+        <ul>
+            <li class="col-md-3 members" ng-repeat="member in mem.members">
+                <img ng-src="img/{{member.image}}" /><br />
+                <h3>{{member.name}}</h3><br />
+                <hr />
+                <p>{{member.discription1}}</p>
+                 <hr />
+            </li>
+        </ul>
+    </div>
+</div>

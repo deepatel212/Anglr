@@ -1,0 +1,27 @@
+﻿<div class="jumbotron text-left image2">
+
+    <h1>This is Page 2</h1>
+     <h2>{{ message }}</h2>
+
+</div>
+<h1 class="title">Important Things to keep in mind</h1>
+<hr />
+<div class="row">
+    <div class="col-md-12">
+        <ul>
+            <li ng-repeat="wonder in won.wonders" class="wonders col-md-12">
+                <div class="row">
+                    <div class="col-md-6">
+                    <img ng-src="img/{{wonder.image}}" />
+                    </div>
+                    <div class="col-md-6">
+                        <h2>{{wonder.title}}</h2>
+                        <hr />
+                        <p>{{wonder.discription1}}</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+</div>
