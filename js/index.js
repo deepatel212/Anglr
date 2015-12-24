@@ -18,7 +18,7 @@ sampleApp.config(function ($routeProvider) {
                 controller: 'page2Controller'
             })
             .when('/page3', {
-                templateUrl: 'contact.html',
+                templateUrl: 'views/contact.html',
                 controller: 'ContactController'
             });
            
@@ -163,7 +163,7 @@ sampleApp.config(function ($routeProvider) {
   
   });
   sampleApp.controller('ContactController', function ($scope, $http) {
-      alert("Controller Attached");
+     
     $scope.result = 'hidden'
     $scope.resultMessage;
     $scope.formData; //formData is an object holding the name, email, subject, and message
@@ -173,6 +173,7 @@ sampleApp.config(function ($routeProvider) {
         $scope.submitted = true;
         $scope.submitButtonDisabled = true;
         if (contactform.$valid) {
+             alert("Controller Attached");
             $http({
                 method  : 'POST',
                 url     : 'contact-form.php',
