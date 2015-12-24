@@ -183,6 +183,7 @@ sampleApp.config(function ($routeProvider) {
                     $scope.submitButtonDisabled = true;
                     $scope.resultMessage = data.message;
                     $scope.result='bg-success';
+                    alert();
                 } else {
                     $scope.submitButtonDisabled = false;
                     $scope.resultMessage = data.message;
